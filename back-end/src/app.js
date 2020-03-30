@@ -8,6 +8,8 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 app.use(errors());
+
+module.exports = app;
 /**
  * Métodos HTTP:
  * 
@@ -23,6 +25,3 @@ app.use(errors());
  * Route params: parametros utilizados para identificar recursos
  * Request Body: Corpo da requeisição para criar ou alterar recursos 
  */
-
-
-app.listen(3333);
